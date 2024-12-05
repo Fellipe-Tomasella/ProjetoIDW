@@ -1,0 +1,198 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.3;
+    background: #1a472a; /* Verde escuro */
+    color: #f0e68c; /* Dourado claro */
+    min-height: 100vh;
+}
+
+header {
+    background: url(img/teste01.jpg) no-repeat center top;
+    background-size: cover;
+    padding: 10rem 0;
+    text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 71, 42, 0.7); /* Verde escuro com transparência */
+}
+
+header h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: #ffd700; /* Dourado */
+    position: relative;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ffd700; /* Dourado */
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-color: #ffd700;
+    background: rgba(255, 215, 0, 0.1);
+    transform: scale(1.05);
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.cavalaria-info {
+    background: rgba(255, 215, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.cavalaria-info h2 {
+    color: #ffd700;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.conteudo-cavalaria p {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 215, 0, 0.05);
+    border-left: 3px solid #ffd700;
+    border-radius: 0 10px 10px 0;
+}
+
+.oficiais-lista {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: rgba(255, 215, 0, 0.05);
+    border-radius: 15px;
+}
+
+.oficiais-lista h3 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.oficiais-lista ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.oficiais-lista li {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.oficiais-lista li:hover {
+    background: rgba(255, 215, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.curiosidade {
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 15px;
+    border: 2px solid #ffd700;
+}
+
+.curiosidade h3 {
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.imagem-secao {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.imagem-secao img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagem-secao:hover {
+    transform: translateY(-5px);
+}
+
+.imagem-legenda {
+    text-align: center;
+    padding: 1rem 0;
+    color: #ffd700;
+    font-style: italic;
+}
+
+footer {
+    background: rgba(26, 71, 42, 0.9);
+    color: #ffd700;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .oficiais-lista ul {
+        grid-template-columns: 1fr;
+    }
+}
