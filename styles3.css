@@ -14,9 +14,9 @@ body {
 }
 
 header {
-    background: url(img/teste01.jpg) no-repeat center top;
+    background: url(img/cavalaria02.jpg) no-repeat center top;
     background-size: cover;
-    padding: 10rem 0;
+    padding: 10em 0;
     text-align: center;
     position: relative;
 }
@@ -34,8 +34,8 @@ header::before {
 header h1 {
     font-size: 3em;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 0.4em;
+    text-shadow: 0.2em 0.2em 0.4em rgba(0,0,0,0.5);
     color: #ffd700; /* Dourado */
     position: relative;
     z-index: 1;
@@ -44,8 +44,8 @@ header h1 {
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-top: 20px;
+    gap: 2.5em;
+    margin-top: 2em;
     position: relative;
     z-index: 1;
 }
@@ -57,9 +57,9 @@ nav ul li {
 nav ul li a {
     color: #ffd700; /* Dourado */
     text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-radius: 30px;
+    padding: 1em 2em;
+    border: 0.2em solid transparent;
+    border-radius: 3em;
     transition: all 0.3s ease;
 }
 
@@ -70,109 +70,109 @@ nav ul li a:hover {
 }
 
 main {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 30px;
+    max-width: 100%;
+    margin: 4em auto;
+    padding: 3em;
 }
 
 .cavalaria-info {
     background: rgba(255, 215, 0, 0.1);
     backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 2rem;
-    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 2em;
+    padding: 2em;
+    border: 0.1em solid rgba(255, 215, 0, 0.2);
 }
 
 .cavalaria-info h2 {
     color: #ffd700;
     font-size: 2.2em;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 0.2em;
+    text-shadow: 0.2em 0.2em 0.4em rgba(0,0,0,0.3);
 }
 
 .conteudo-cavalaria p {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
+    margin-bottom: 1.5em;
+    padding: 1em;
     background: rgba(255, 215, 0, 0.05);
-    border-left: 3px solid #ffd700;
-    border-radius: 0 10px 10px 0;
+    border-left: 0.3em solid #ffd700;
+    border-radius: 0 1em 1em 0;
 }
 
 .oficiais-lista {
-    margin: 2rem 0;
-    padding: 2rem;
+    margin: 2em 0;
+    padding: 2em;
     background: rgba(255, 215, 0, 0.05);
-    border-radius: 15px;
+    border-radius: 1.5em;
 }
 
 .oficiais-lista h3 {
     color: #ffd700;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     text-align: center;
 }
 
 .oficiais-lista ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+    gap: 1em;
 }
 
 .oficiais-lista li {
-    padding: 0.5rem;
+    padding: 0.5em;
     text-align: center;
-    border: 1px solid rgba(255, 215, 0, 0.2);
-    border-radius: 5px;
+    border: 0.1em solid rgba(255, 215, 0, 0.2);
+    border-radius: 0.5em;
     transition: all 0.3s ease;
 }
 
 .oficiais-lista li:hover {
     background: rgba(255, 215, 0, 0.1);
-    transform: translateY(-2px);
+    transform: translateY(-0.2em);
 }
 
 .curiosidade {
-    margin-top: 2rem;
-    padding: 2rem;
+    margin-top: 2em;
+    padding: 2em;
     background: rgba(255, 215, 0, 0.1);
-    border-radius: 15px;
-    border: 2px solid #ffd700;
+    border-radius: 1.5em;
+    border: 0.2em solid #ffd700;
 }
 
 .curiosidade h3 {
     color: #ffd700;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .imagem-secao {
-    margin: 2rem auto;
-    max-width: 800px;
-    padding: 1rem;
+    margin: 2em auto;
+    max-width: 100%;
+    padding: 1em;
     background: rgba(255, 215, 0, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
-    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 1.5em;
+    box-shadow: 0 1.5em 2.5em rgba(0,0,0,0.3);
+    border: 0.1em solid rgba(255, 215, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
 .imagem-secao img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 1em;
     transition: transform 0.3s ease;
 }
 
 .imagem-secao:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.5em);
 }
 
 .imagem-legenda {
     text-align: center;
-    padding: 1rem 0;
+    padding: 1em 0;
     color: #ffd700;
     font-style: italic;
 }
@@ -181,9 +181,9 @@ footer {
     background: rgba(26, 71, 42, 0.9);
     color: #ffd700;
     text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 3rem;
-    border-top: 1px solid rgba(255, 215, 0, 0.2);
+    padding: 1.5em 0;
+    margin-top: 3em;
+    border-top: 0.1em solid rgba(255, 215, 0, 0.2);
 }
 
 @media (max-width: 768px) {

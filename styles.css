@@ -17,7 +17,7 @@ body {
 header {
     background: url(img/bandeira.png) no-repeat center top;
     background-size: cover;
-    padding: 10rem 0;
+    padding: 10em 0;
     text-align: center;
 }
 
@@ -30,20 +30,20 @@ header {
 header h1 {
     font-size: 2em;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 0.25em;
+    text-shadow: 0.125em 0.125em 0.25em rgba(0,0,0,0.3);
 }
 header > h1 {
-    padding-left: 17rem;
+    padding-left: 17em;
 }
 
 /* Navegação estilizada */
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-top: 20px;
-    padding-left: 17rem;
+    gap: 1.563em;
+    margin-top: 1.25em;
+    padding-left: 17em;
 }
 
 nav ul li {
@@ -53,9 +53,9 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    border-radius: 30px;
+    padding: 0.625em 1.25em;
+    border: 0.125em solid transparent;
+    border-radius: 1.875em;
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
@@ -70,11 +70,11 @@ nav ul li a:hover {
 /* Conteúdo principal */
 main {
     max-width: 160vh;
-    margin: 40px auto;
-    padding: 30px;
+    margin: 2.5em auto;
+    padding: 1.875em;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
+    backdrop-filter: blur(0.625em);
+    border-radius: 1.25em;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
     margin-bottom: 100px;
 }
@@ -269,9 +269,9 @@ footer {
     font-size: 2em;
     color: white;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
     position: relative;
-    padding: 20px 0;
+    padding: 1.25em 0;
 }
 
 /* Estilo específico para o título dos parceiros */
@@ -279,7 +279,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25em;
     white-space: nowrap;
 }
 
@@ -287,8 +287,8 @@ footer {
 .partners h2:after {
     content: '';
     display: inline-block;
-    width: 150px;
-    height: 4px;
+    width: 9.375em;
+    height: 0.25em;
     background: #FFD700;
 }
 
@@ -306,18 +306,18 @@ footer {
 }
 
 /* Ajustes responsivos para os títulos */
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
     .partners h2 {
         font-size: 1.8em;
     }
 
     .partners h2:before,
     .partners h2:after {
-        width: 100px;
+        width: 6.25em;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .partners h2 {
         font-size: 1.5em;
         flex-direction: column;
@@ -327,7 +327,7 @@ footer {
 
     .partners h2:before,
     .partners h2:after {
-        width: 80px;
+        width: 5em;
     }
 
     .intro-text h2 {
